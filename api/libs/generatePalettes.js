@@ -60,7 +60,7 @@ async function generatePalettes () {
             const rgb = roundToInt(color.getRgb());
             palettes[id][variant.toLowerCase()] = {
                 rgb : rgb,
-                hex : convert.rgb.hex(...rgb),
+                hex : '#' + convert.rgb.hex(...rgb),
                 hsl : convert.rgb.hsl(...rgb)
             }
         }
