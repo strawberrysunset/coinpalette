@@ -16,7 +16,7 @@ async function generatePalettes () {
         const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=${i}`;
         let result = await jsonFetch(url).catch(_ => [])
         // console.log(result)
-        if (result.length === 0) break
+        if (i > 3 || result.length === 0) break
         coins.push(...result)
         i++
     }
