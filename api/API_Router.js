@@ -3,6 +3,10 @@ const router = express.Router()
 const getColors  = require('./libs/getColors')
 const getCoinList = require('./libs/getCoins')
 const csvToArray = require('./libs/utils/csvToArray')
+const cors = require('cors')
+
+router.use(cors());
+
 
 router.get('/coins', ( _, res ) => {
     const coinList = getCoinList()
