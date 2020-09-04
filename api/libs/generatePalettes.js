@@ -42,9 +42,7 @@ async function generatePalettes () {
 
     console.log('Generating palettes...')
     let palettes = {};
-    coins.forEach(({ id }) => {
-        palettes[id] = {}
-    });
+
 
     await Promise.all(coins.map(async ({ id, localImagePath }) => {
         
@@ -58,7 +56,8 @@ async function generatePalettes () {
             const color = colors[variant];
             if (!color) return console.log(`Failed to get palettes for ${id}`)
             const rgb = roundToInt(color.getRgb());
-            palettes[id][variant.toLowerCase()] = {
+            palettes[id] = {};
+	    palettes[id][variant.toLowerCase()] = {
                 rgb : rgb,
                 hex : '#' + convert.rgb.hex(...rgb),
                 hsl : convert.rgb.hsl(...rgb)
