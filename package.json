@@ -12,6 +12,7 @@
     "fs-extra": "^9.0.0",
     "node-fetch": "^2.6.0",
     "node-vibrant": "^3.1.5",
+    "pm2": "^4.5.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
@@ -19,7 +20,7 @@
   },
   "scripts": {
     "dev": "react-scripts start",
-    "serve": "node server.js ",
+    "serve": "pm2 start server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
