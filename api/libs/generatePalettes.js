@@ -16,7 +16,7 @@ async function generatePalettes () {
         const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=${i}`;
         let result = await jsonFetch(url).catch(_ => [])
         // console.log(result)
-        if (i > 4 || result.length === 0) break
+        if (i > 5 || result.length === 0) break
         coins.push(...result)
         i++
     }
@@ -43,21 +43,19 @@ async function generatePalettes () {
     console.log('Generating palettes...')
     let palettes = {};
 
-
     await Promise.all(coins.map(async ({ id, localImagePath }) => {
         
         // Generate color palette from image.
         let colors = await vibrant.from(localImagePath).getPalette()
-        .catch(err => new Error(err))
+        .catch(() => {})
 
         // Create palette object containing rgb, hex and hsl fields.
-
         for (variant in colors) {
             const color = colors[variant];
             if (!color) return console.log(`Failed to get palettes for ${id}`)
             const rgb = roundToInt(color.getRgb());
             palettes[id] = {};
-	    palettes[id][variant.toLowerCase()] = {
+	          palettes[id][variant.toLowerCase()] = {
                 rgb : rgb,
                 hex : '#' + convert.rgb.hex(...rgb),
                 hsl : convert.rgb.hsl(...rgb)
@@ -67,7 +65,8 @@ async function generatePalettes () {
         function roundToInt (array) {
             return array.map(val => Math.round(val))
         }
-    })).catch(err => new Error(err))
+    })).catch(() => {})
+    
 
     console.log('Saving palettes to file...')
     writeFileSync(path.join(__dirname, "../colorList.json"), JSON.stringify(palettes))
