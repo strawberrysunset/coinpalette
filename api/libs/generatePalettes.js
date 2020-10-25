@@ -50,11 +50,11 @@ async function generatePalettes () {
         .catch(() => {})
 
         // Create palette object containing rgb, hex and hsl fields.
+        palettes[id] = {};
         for (variant in colors) {
             const color = colors[variant];
             if (!color) return console.log(`Failed to get palettes for ${id}`)
             const rgb = roundToInt(color.getRgb());
-            palettes[id] = {};
 	          palettes[id][variant.toLowerCase()] = {
                 rgb : rgb,
                 hex : '#' + convert.rgb.hex(...rgb),
