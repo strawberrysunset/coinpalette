@@ -67,7 +67,7 @@ export default function Docs() {
                 </Underlined>
             </Title>
             <Article>
-                <p>This API was created as a tool for client-side rendered sites that require cryptocurrency logo colour information. The API is very simple, featuring just 2 endpoints. <br></br><br></br> <Bold>/coins</Bold> returns a list of supported cryptocurrencies. <br></br> <Bold>/colors</Bold> takes a list of cryptocurrencies and returns a color palette for each.</p>
+                <p>This API was created as a tool for client-side rendered sites that require cryptocurrency logo colorinformation. The API is very simple, featuring just 2 endpoints. <br></br><br></br> <Bold>/coins</Bold> returns a list of supported cryptocurrencies. <br></br> <Bold>/colors</Bold> takes a list of cryptocurrencies and returns a color palette for each.</p>
                 <h4>Example</h4>
                 <p>An example API request specifying coins and color format. Try it for yourself by editing the request below.</p>
                 <Box title="Request">
