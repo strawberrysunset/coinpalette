@@ -43,11 +43,11 @@ export default function NavBar() {
             <Ident/>
             <Burger onClick={() => setShowFlyout(!showFlyout)} src={BurgerIcon}/>
             {showFlyout ? <FlyoutMenu closeFlyout={() => setShowFlyout(!showFlyout)}>
-                <Link to="https://github.com/AvalancheLab/coinpalette"><p>Source Code</p></Link>
+                <Link to="https://github.com/strawberrysunset/coinpalette"><p>Source Code</p></Link>
                 <Link to="http://www.twitter.com/share?url=https://www.coinpalette.com/"><p>SHARE</p></Link>
             </FlyoutMenu> : null }
             <Nav>
-                <Link to="https://github.com/AvalancheLab/coinpalette"><p>Source Code</p></Link>
+                <Link to="https://github.com/strawberrysunset/coinpalette"><p>Source Code</p></Link>
                 <Link to="http://www.twitter.com/share?url=https://www.coinpalette.com/"><ShareButton >SHARE</ShareButton></Link>
             </Nav>
         </Container>
