@@ -44,7 +44,7 @@ export default function Footer() {
         <Background>
             <Container>
                 <IdentNew/>
-                <h6>Made by <Link to="https://github.com/AvalancheLab">AvalancheLab</Link></h6>
+                <h6>Made by <Link to="https://github.com/strawberrysunset">StrawberrySunset</Link></h6>
                 <p>Powered by <Link to="https://www.npmjs.com/package/node-vibrant">Node-Vibrant</Link> and <Link href="https://www.coingecko.com/en/api">Coingecko's V3 API</Link></p>
             </Container>
         </Background>
