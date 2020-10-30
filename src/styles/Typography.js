@@ -9,7 +9,7 @@ export default createGlobalStyle`
     }
 
     h1 {
-        ${fluid('font-size', '38rem', '98rem')}
+        ${fluid('font-size', '2.375rem', '6.125rem')}
         font-family : 'Domine';
         line-height: 1.1;
         letter-spacing : -0.04em;
@@ -23,18 +23,18 @@ export default createGlobalStyle`
     }
 
     h3 {
-        ${fluid('font-size', '20rem', '2rem')}
+        ${fluid('font-size', '1.25rem', '2rem')}
         font-family : 'Domine';
         letter-spacing : -0.05em;
     }
 
     h4 {
-        ${fluid('font-size', '20rem', '1.5rem')}
+        ${fluid('font-size', '1.25rem', '1.5rem')}
         font-weight: 600;
     }
 
     h5 {
-        ${fluid('font-size', '1rem', '20rem')}
+        ${fluid('font-size', '1rem', '1.25rem')}
         font-weight: 600;
     }
 
@@ -44,7 +44,7 @@ export default createGlobalStyle`
     }
 
     p {
-        ${fluid('font-size', '13rem', '0.875rem')}
+        ${fluid('font-size', '0.8125rem', '0.875rem')}
         line-height: 1.6;
         
     }
