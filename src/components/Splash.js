@@ -14,7 +14,7 @@ const Container = styled.div`
         "subtitle graphic"
         "version  graphic";
 
-    @media (max-width: 1200px) {
+    @media (max-width: 75rem) {
         text-align: center;
         place-items: center;
         grid-template-areas: 
@@ -27,7 +27,7 @@ const Container = styled.div`
 `
 
 const Title = styled.h1`
-     @media (max-width: 1200px) {
+     @media (max-width: 75rem) {
         display: grid;
         place-items: center;
     }
@@ -36,7 +36,7 @@ const Title = styled.h1`
 
 const SubTitle = styled.h3`
     margin-top: 1rem;
-    max-width: 620rem;
+    max-width: 38.75rem;
     grid-area: subtitle;
 `
 
@@ -47,7 +47,7 @@ const Version = styled.div`
 `
 
 const Graphic = styled.img`
-    ${fluid('height', '180rem', '464rem')}
+    ${fluid('height', '11.25rem', '29rem')}
     margin-top: 2rem;
     grid-area: graphic;
 `
@@ -59,12 +59,11 @@ export default function Splash() {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
-        getCount();
-        async function getCount () {
+        (async function getCount () {
             const response = await fetch('/coins')
             const data = await response.json();
             setCount(data['coins'].length);
-        }
+        })();
     }, [])
     
     return (
