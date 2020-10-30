@@ -11,25 +11,25 @@ import { fluid } from '../styles/Utils'
 
 const Container = styled.div`
     color: ${colours.dark};
-    max-width: 568rem;   
+    max-width: 35.5rem;   
     margin: 0 auto;
-    padding: 0 16rem;
-    ${fluid('padding-top', '48rem', '120rem')};
-    ${fluid('padding-bottom', '48rem', '120rem')};
+    padding: 0 1rem;
+    ${fluid('padding-top', '3rem', '120rem')};
+    ${fluid('padding-bottom', '3rem', '120rem')};
 `
 
 const Title = styled.div`
     display: flex;
     align-items: center;
-    grid-gap: 8rem;
-    margin-bottom: 16rem;
+    grid-gap: 0.5rem;
+    margin-bottom: 1rem;
 `
 
 const TitleText = styled.h2`
 `
 const TitleLogo = styled.img`
-    height: 48rem;
-    margin-right: 8rem;
+    height: 3rem;
+    margin-right: 0.5rem;
 `
 const Input = styled.input`
     background: ${colours.light};

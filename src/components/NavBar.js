@@ -24,14 +24,14 @@ const Nav = styled.nav`
 
 const Burger = styled.img`
     margin-left: auto;
-    height: 32rem;
+    height: 2rem;
     @media only screen and (min-width: 800px ) {
         display: none;
     }
 `
 
 const ShareButton = styled(Button)`
-    margin-left: 16rem;
+    margin-left: 1rem;
 `
 
 export default function NavBar() {

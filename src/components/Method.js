@@ -7,28 +7,28 @@ const Header = styled.div`
     display:flex;
     align-items: center;
     color: ${colours.dark};
-    margin-top: 16rem;
-    margin-bottom: 16rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 `
 
 const Box = styled.p`
     display: flex;
     align-items:center;
     justify-content: center;
-    padding: 8rem 16rem;
+    padding: 0.5rem 1rem;
     color: ${colours.light};
 ` 
 
 const MethodBox = styled(Box)`
-    border-radius: 4rem 0 0 4rem;
+    border-radius: 0.25rem 0 0 0.25rem;
     background: ${colours.dark2};
 `
 
 const PathBox = styled(Box)`
-    border-radius: 0 4rem 4rem 0;
+    border-radius: 0 0.25rem 0.25rem 0;
     background-color: ${colours.dark};
-    margin-right: 16rem;
-    min-width: 80rem;
+    margin-right: 1rem;
+    min-width: 5rem;
 `
 
 export default function Method ({ type, path, summary }) {

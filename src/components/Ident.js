@@ -7,8 +7,8 @@ const Container = styled.div`
     align-items: center;
 `
 const Logo = styled.img`
-    height: 32rem;
-    margin-right: 8rem;
+    height: 2rem;
+    margin-right: 0.5rem;
     margin-left: -3rem;
     transform: rotate(90deg);
 `

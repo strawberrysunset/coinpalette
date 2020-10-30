@@ -24,17 +24,17 @@ const Container = styled.div`
     @media only screen and (max-width: 800px) {
         justify-content: start;
     }
-    grid-gap: 8rem;
+    grid-gap: 0.5rem;
     align-items: center;
-    margin: 48rem 16rem;
+    margin: 3rem 1rem;
     text-align: center;
-    padding:  0 16rem;
+    padding:  0 1rem;
     opacity: 0.8;
 `
 
 
 const IdentNew = styled(Ident)`
-    ${fluid('margin-bottom', '0rem', '8rem')}
+    ${fluid('margin-bottom', '0rem', '0.5rem')}
     opacity: 0.8;
 `
 

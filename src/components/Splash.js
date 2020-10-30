@@ -7,7 +7,7 @@ import { fluid } from '../styles/Utils'
 import Link from '../components/common/Link'
 
 const Container = styled.div`
-    padding-top: 80rem;
+    padding-top: 5rem;
     display: grid;
     grid-template-areas: 
         "title    graphic"
@@ -35,20 +35,20 @@ const Title = styled.h1`
 `
 
 const SubTitle = styled.h3`
-    margin-top: 16rem;
+    margin-top: 1rem;
     max-width: 620rem;
     grid-area: subtitle;
 `
 
 const Version = styled.div`
-    ${fluid('margin-top', '40rem', '80rem')}
-    /* margin-top: 80rem; */
+    ${fluid('margin-top', '2.5rem', '5rem')}
+    /* margin-top: 5rem; */
     grid-area: version;
 `
 
 const Graphic = styled.img`
     ${fluid('height', '180rem', '464rem')}
-    margin-top: 32rem;
+    margin-top: 2rem;
     grid-area: graphic;
 `
 

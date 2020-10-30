@@ -3,32 +3,32 @@ import styled from 'styled-components'
 
 const Container = styled.div`
     > p {
-        margin-top: 8rem;
-        /* margin-bottom: 16rem; */
+        margin-top: 0.5rem;
+        /* margin-bottom: 1rem; */
     }
     > h1 { 
-        margin-top: 8rem;
-        /* margin-bottom: 8rem; */
+        margin-top: 0.5rem;
+        /* margin-bottom: 0.5rem; */
     }
     > h2 { 
-        margin-top: 8rem;
+        margin-top: 0.5rem;
         /* margin-bottom: 100rem; */
     }
     > h3 { 
-        margin-top: 8rem;
-        /* margin-bottom: 16rem; */
+        margin-top: 0.5rem;
+        /* margin-bottom: 1rem; */
     }
     > h4 { 
-        margin-top: 32rem;
-        /* margin-bottom: 8rem; */
+        margin-top: 2rem;
+        /* margin-bottom: 0.5rem; */
     }
     > h5 { 
-        margin-top: 16rem;
-        /* margin-bottom: 8rem; */
+        margin-top: 1rem;
+        /* margin-bottom: 0.5rem; */
     }
     > h6 { 
-        margin-top: 8rem;
-        /* margin-bottom: 8rem; */
+        margin-top: 0.5rem;
+        /* margin-bottom: 0.5rem; */
     }
 `
 

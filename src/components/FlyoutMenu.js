@@ -6,11 +6,11 @@ import CloseBox from '../assets/closebox.svg'
 const Container = styled.div`
     margin: 0 auto;
     position: absolute;
-    padding-top: 40rem;
-    padding-bottom: 32rem;
-    width: 156rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+    width: 9.75rem;
     right: 0rem;
-    border-radius: 4rem 0 0 4rem;
+    border-radius: 0.25rem 0 0 0.25rem;
     background: ${colours.light};
     color: ${colours.dark2};
     display: flex;
@@ -21,11 +21,11 @@ const Container = styled.div`
 const CloseButton = styled.button`
     background-image: url(${CloseBox});
     background-size: cover;
-    height: 32rem;
+    height: 2rem;
     position: absolute;
     top: 0;
     right: 0;
-    width: 32rem;
+    width: 2rem;
     margin-left: auto;
 `
 
