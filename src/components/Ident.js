@@ -9,7 +9,7 @@ const Container = styled.div`
 const Logo = styled.img`
     height: 2rem;
     margin-right: 0.5rem;
-    margin-left: -3rem;
+    margin-left: -0.1875rem;
     transform: rotate(90deg);
 `
 const Text = styled.h4`
