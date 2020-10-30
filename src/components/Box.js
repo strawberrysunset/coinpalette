@@ -29,7 +29,7 @@ const Content = styled.div`
     ${fluid('padding-right', '1.5rem', '2rem')}
     ${fluid('padding-left', '1.5rem', '2rem')}
     overflow: auto;
-    max-height: 300rem;
+    max-height: 18.75rem;
     /* text-shadow: 0rem 0rem 1rem ${colours.light3}; */
 `
 

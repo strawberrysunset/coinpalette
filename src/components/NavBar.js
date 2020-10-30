@@ -14,7 +14,7 @@ const Container = styled.div`
 const Nav = styled.nav`
     display: flex;
     grid-auto-flow: column;
-    grid-gap: 20rem;
+    grid-gap: 1.25rem;
     place-items: center;
     margin-left: auto;
     @media only screen and (max-width: 800px ) {
