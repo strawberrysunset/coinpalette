@@ -9,11 +9,11 @@ import { fluid } from '../styles/Utils'
 const Container = styled.div`
     color: ${colours.light};
     width: 100%;
-    max-width: ${breakpoints.max}rem;
+    max-width: ${breakpoints.max }rem;
     ${fluid('padding-top', '1rem', '6.5rem')};
     ${fluid('padding-bottom', '2rem', '5rem')};
-    ${fluid('padding-left', '1rem', '10rem')};
-    ${fluid('padding-right', '1rem', '10rem')};
+    ${fluid('padding-left', '1rem', '6rem')};
+    ${fluid('padding-right', '1rem', '6rem')};
 `
 
 const Background = styled.div`
