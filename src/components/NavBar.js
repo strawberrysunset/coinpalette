@@ -17,7 +17,7 @@ const Nav = styled.nav`
     grid-gap: 1.25rem;
     place-items: center;
     margin-left: auto;
-    @media only screen and (max-width: 800px ) {
+    @media only screen and (max-width: 50rem ) {
         display: none;
     }
 `
@@ -25,7 +25,7 @@ const Nav = styled.nav`
 const Burger = styled.img`
     margin-left: auto;
     height: 2rem;
-    @media only screen and (min-width: 800px ) {
+    @media only screen and (min-width: 50rem ) {
         display: none;
     }
 `
