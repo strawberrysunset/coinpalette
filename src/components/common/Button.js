@@ -8,6 +8,9 @@ const ButtonElement = styled.button`
     font-weight: 600;
     border-radius: 2rem;
     height: 2.5rem;
+    :hover {
+      cursor: pointer;
+    }
 `
 
 export default function Button ({ children, className }) {
