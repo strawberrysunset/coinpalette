@@ -9,8 +9,7 @@ import { fluid } from '../styles/Utils'
 const Container = styled.div`
     color: ${colours.light};
     width: 100%;
-    max-width: min-content;
-    min-width: max-content;
+    max-width: 1250px;
     ${fluid('padding-top', '1rem', '6.5rem')};
     ${fluid('padding-bottom', '2rem', '5rem')};
     ${fluid('padding-left', '1rem', '6rem')};

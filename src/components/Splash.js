@@ -27,7 +27,7 @@ const Container = styled.div`
 `
 
 const Title = styled.h1`
-     @media (max-width: 75rem) {
+    @media (max-width: 75rem) {
         display: grid;
         place-items: center;
     }
@@ -38,6 +38,7 @@ const SubTitle = styled.h3`
     margin-top: 1rem;
     max-width: 38.75rem;
     grid-area: subtitle;
+    white-space: pre-wrap;
 `
 
 const Version = styled.div`
@@ -47,7 +48,7 @@ const Version = styled.div`
 `
 
 const Graphic = styled.img`
-    ${fluid('height', '15rem', '29rem')}
+    ${fluid('height', '15rem', '22rem')}
     margin-top: 2rem;
     grid-area: graphic;
 `
