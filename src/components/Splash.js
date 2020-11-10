@@ -47,7 +47,7 @@ const Version = styled.div`
 `
 
 const Graphic = styled.img`
-    ${fluid('height', '11.25rem', '29rem')}
+    ${fluid('height', '15rem', '29rem')}
     margin-top: 2rem;
     grid-area: graphic;
 `
